@@ -100,7 +100,7 @@ var sds = document.getElementById("dum");
   
 
 <div id="header">
-	<h1>APANA - BANK<span class="style1"></span></h1>
+	<h1>COGNIZANT BANK<span class="style1"></span></h1>
     <h2>ExtraOrdinary Service</h2>
     <A href="index.html"><IMG SRC="images/home1.gif"></IMG></A>	
 </div>
@@ -133,7 +133,7 @@ var sds = document.getElementById("dum");
 	</td>
     
     <td width="1200" valign="top">
-    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>OPEN ACCOUNT FORM</h1><br>
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>REGISTERED MEMBER ACCOUNT</h1><br>
     	    <table  align="center" bgcolor="white">
 		<tr>
 			
