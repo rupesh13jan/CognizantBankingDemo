@@ -1,4 +1,3 @@
-<html>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,10 +18,10 @@ var sds = document.getElementById("dum");
 <body>
 
 <div id="top_links">
-  
+  </div>
 
 <div id="header">
-	<h1>APANA - BANK<span class="style1"></span></h1>
+	<h1>Cognizant BANK<span class="style1"></span></h1>
     <h2>ExtraOrdinary Service</h2>
     <A href="index.html"><IMG SRC="images/home1.gif"></IMG></A>	
 </div>
@@ -58,31 +57,68 @@ var sds = document.getElementById("dum");
     	
     	<% 
 %>
-<table>
-		<tr>
-			<td align="center" valign="middle" bgcolor="red"><h4>Account Info</h4></td>
-		</tr>
-		<tr>
-			<td>
-			<%if(request.getAttribute("balance")!=null)
-			{
-			out.print(request.getAttribute("balance"));
-			out.print(request.getAttribute("totaldataamount"));
-			}
+<table><%
+
+try {
+		    Connection con1=GetCon.getCon();
+			//PreparedStatement ps1=con1.prepareStatement("Select max(accountno) from newaccount");
+			PreparedStatement ps1=con1.prepareStatement("Select max(accountno) from newaccount");
+           
+            ResultSet rs1=ps1.executeQuery();
+            while(rs1.next()){
+				int  accountno=rs1.getInt(1);
+				request.setAttribute("accountno",accountno);
+				}
+		    Integer accountno=(Integer)request.getAttribute("accountno");
+			Connection con=GetCon.getCon();
+			PreparedStatement ps=con.prepareStatement("Select * from NEWACCOUNT where accountno='"+accountno+"'");
+           // ps.setInt(1,accountno);
+			ResultSet rs=ps.executeQuery();
 			
-			 %>
-				</td>
-		</tr>
-
- 
-
-    		</table><%
+			out.print("<table align='left'  cellspacing='5' cellpadding='5'>");
+			out.print("<tr><th>ACCOUNT NO</th><th>USERNAME</th><th>PASSWORD</th><th>AMOUNT</th><th>ADDRESS</th><th>PHONE</th></tr>");
+			while(rs.next()){
+				
+				session.setAttribute("accountno",accountno);
+				
+				System.out.print(accountno);
+				out.print("<tr>");
+				out.print("<td>" + rs.getInt(1) + "</td>");
+				out.print("<td>" + rs.getString(2) + "</td>");
+				out.print("<td>" + rs.getString(3) + "</td>");
+				out.print("<td>" + rs.getInt(5) + "</td>");
+				
+				out.print("<td>" + rs.getString(6) + "</td>");
+				out.print("<td>" + rs.getLong(7) + "</td>");
+				
+				
+				//out.print("<td><a href='DeleteServlet' >Delete</a></td>");
+			    
+				out.print("</tr>");
+			    
+			}
+			out.print("</table>");
+			
+			/*out.print("<table align='right'width='40%'>");
+			out.print("<tr><td><a href='Compose.html'>COMPOSE</a></td></tr>");
+			out.print("<tr><td><a href='InboxServlet'>INBOX</a></td></tr>");
+			out.print("<tr><td><a href='LogoutServlet'>LOGOUT</a></td></tr>");
+			//out.print("<tr><td><a href='DeleteServlet'>Delete</a></td></tr>");
+			
+			out.print("</table>");*/
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+   
+			%></table><%
 %>
     	
     	
-		 </table>
+		</table>
 
 
- 
-	
-</html>
+
+<%@ page import="java.sql.*"%>
+<%@ page import="java.io.*" %>
+<%@ page import="javax.servlet.*"%>
+<%@ page import="g.*" %>

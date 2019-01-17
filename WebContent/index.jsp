@@ -18,7 +18,7 @@ var sds = document.getElementById("dum");
 <body>
 
 <div id="top_links">
-  
+  </div>
 
 <div id="header">
 	<h1>Cognizant BANK<span class="style1"></span></h1>
