@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_73">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
@@ -13,5 +8,48 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/ecj-4.4.2.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat7-websocket.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-i18n-ru.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="D:/apache-tomcat-7.0.92/lib/websocket-api.jar"/>
+	<classpathentry kind="lib" path="D:/javax.servlet.jsp.jstl-1.2.5-b03.jar"/>
+	<classpathentry kind="lib" path="D:/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/ant-javafx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/dt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/javafx-mx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/packager.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/sa-jdi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/lib/tools.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/jce.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/resources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/jdk1.8.0_131/jre/lib/rt.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
