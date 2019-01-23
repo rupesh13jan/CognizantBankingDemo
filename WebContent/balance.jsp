@@ -9,7 +9,6 @@
 function ctck()
 {
 var sds = document.getElementById("dum");
-
 }
 </script>
 
@@ -18,6 +17,7 @@ var sds = document.getElementById("dum");
 <body>
 
 <div id="top_links">
+</div>
   
 
 <div id="header">
@@ -121,4 +121,3 @@ var sds = document.getElementById("dum");
 <%@ page import="java.io.*" %>
 <%@ page import="javax.servlet.*"%>
 <%@ page import="g.*" %>
-  
