@@ -27,12 +27,12 @@ var sds = document.getElementById("dum");
 <div id="navigation">
     <ul>
     <li><a href="create.html">NEW ACCOUNT</a></li>
-    <li><a href="balance1.jsp">BALANCE</a></li>
-    <li><a href="deposit1.jsp">DEPOSIT</a></li>
-    <li><a href="withdraw1.jsp">WITHDRAW</a></li>
-    <li><a href="transfer1.jsp">TRANSFER</a></li>
-    <li><a href="closeac1.jsp">CLOSE A/C</a></li>
-    <li><a href="about.jsp">Contact Us</a></li>
+    <li><a href="balance1.html">BALANCE</a></li>
+    <li><a href="deposit1.html">DEPOSIT</a></li>
+    <li><a href="withdraw1.html">WITHDRAW</a></li>
+    <li><a href="transfer1.html">TRANSFER</a></li>
+    <li><a href="closeac1.html">CLOSE A/C</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
     </ul>
 </div>
 
